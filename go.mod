@@ -1,3 +1,3 @@
-module github.com/robertranjan/datastructures
+module github.com/robertranjan/dsa
 
 go 1.20

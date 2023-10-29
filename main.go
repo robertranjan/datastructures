@@ -4,10 +4,10 @@ import (
 	"container/heap"
 	"fmt"
 
-	myheap "github.com/robertranjan/datastructures/heap"
-	"github.com/robertranjan/datastructures/linkedlist"
-	"github.com/robertranjan/datastructures/slidingwindow"
-	"github.com/robertranjan/datastructures/stackandqueue"
+	myheap "github.com/robertranjan/dsa/heap"
+	"github.com/robertranjan/dsa/linkedlist"
+	"github.com/robertranjan/dsa/slidingwindow"
+	"github.com/robertranjan/dsa/stackandqueue"
 )
 
 // This example inserts several ints into an IntHeap, checks the minimum,
