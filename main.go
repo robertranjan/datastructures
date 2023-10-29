@@ -5,8 +5,9 @@ import (
 	"fmt"
 
 	myheap "github.com/robertranjan/datastructures/heap"
-	linkedlist "github.com/robertranjan/datastructures/linked-list"
-	stackandqueue "github.com/robertranjan/datastructures/stack-and-queue"
+	"github.com/robertranjan/datastructures/linkedlist"
+	"github.com/robertranjan/datastructures/slidingwindow"
+	"github.com/robertranjan/datastructures/stackandqueue"
 )
 
 // This example inserts several ints into an IntHeap, checks the minimum,
@@ -35,4 +36,12 @@ func main() {
 	Q.Enqueue(200)
 	fmt.Printf("S.Deque(): %v", fmt.Sprintln(Q.Deque()))
 
+	fmt.Printf("\n\n----------------sliding window-------------------\n")
+	arr := []int{1, 2, 3, 4, 5, 6, 3, 2, 1, 4, 2, 1, 6, 32, 3}
+	fmt.Printf("\nMax of sliding window\n")
+	fmt.Println("result: ", slidingwindow.FindMaxInWindow(arr, 3))
+	fmt.Printf("\nMin of sliding window\n")
+	fmt.Println("result: ", slidingwindow.FindMinInWindow(arr, 3))
+	fmt.Printf("\nfindShortestWindowMakesN of sliding window\n")
+	fmt.Println("result: ", slidingwindow.FindShortestWindowMakesN(arr, 3, 5))
 }
